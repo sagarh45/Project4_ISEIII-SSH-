@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'docker run -d -p 8082:80 ise-ci-app'
+        sh 'docker run -d -p 8081:80 ise-ci-app'
       }
     }
   }
