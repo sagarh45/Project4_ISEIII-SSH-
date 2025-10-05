@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t ise-ci-app'
+        sh 'docker build -t ise-ci-app .'
       }
     }
     stage('Deploy') {
